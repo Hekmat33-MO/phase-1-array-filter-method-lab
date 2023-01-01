@@ -1,18 +1,25 @@
 // Code your solution here
-const drivers = ["rana", "hiba", "reem", "nim", "sara", "basma"];
+const drivers = ['Bobby', 'Sammy', 'Sally', 'Annette', 'Sarah', 'Bobby'];
 const driverObj = [{
-        name: "basma",
-        hometown: "aden",
+        name: 'Bobby',
+        hometown: 'Pittsburgh'
     },
     {
-        name: "sara",
-        hometown: "aden",
+        name: 'Sammy',
+        hometown: 'New York'
     },
     {
-        name: "nim",
-        hometown: "sana",
+        name: 'Sally',
+        hometown: 'Cleveland'
     },
-    { name: "reem", hometown: "sana" },
+    {
+        name: 'Annette',
+        hometown: 'Los Angeles'
+    },
+    {
+        name: 'Bobby',
+        hometown: 'Tampa Bay'
+    }
 ];
 
 function findMatching(collection, name) {
@@ -48,5 +55,5 @@ function matchName(collection, string) {
     return nameArr;
 }
 console.log(fuzzyMatch(drivers, "b"));
-console.log(findMatching(drivers, "basma"));
-console.log(matchName(driverObj, "basma"));
+console.log(findMatching(drivers, "Bobby"));
+console.log(matchName(driverObj, "Bobby"));
